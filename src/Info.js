@@ -1,5 +1,10 @@
 import React from 'react';
-import {View, Button, Text, StyleSheet} from 'react-native';
+import {
+  View,
+  Button,
+  Text,
+  StyleSheet,
+} from 'react-native';
 
 
 const styles = StyleSheet.create({
@@ -14,14 +19,14 @@ const styles = StyleSheet.create({
 export default (props) => {
     const { navigation } = props;
     return (
-        <View style={styles.container}>
-          <Text>INFO Page!</Text>
-          <Button 
-            title="Go to Info"
-            onPress={() => navigation.navigate('home')}
+      <View style={styles.container}>
+        <Text>INFO Page!</Text>
+        <Button
+          title="Go to Info"
+          onPress={() => navigation.navigate('home')}
 
-          />
+        />
 
-        </View>
+      </View>
       );
-}
+};

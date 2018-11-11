@@ -1,6 +1,10 @@
 import React from 'react';
-import {View, Button, Text, StyleSheet} from 'react-native';
-
+import {
+  View,
+  Button,
+  Text,
+  StyleSheet,
+} from 'react-native';
 
 
 const styles = StyleSheet.create({
@@ -15,14 +19,14 @@ const styles = StyleSheet.create({
 export default (props) => {
     const { navigation } = props;
     return (
-        <View style={styles.container}>
-          <Text>Home Page!</Text>
-          <Button 
-            title="Go to Home"
-            onPress={() => navigation.navigate('info')}
+      <View style={styles.container}>
+        <Text>Home Page!</Text>
+        <Button
+          title="Go to Home"
+          onPress={() => navigation.navigate('info')}
 
-          />
+        />
 
-        </View>
+      </View>
       );
-}
+};

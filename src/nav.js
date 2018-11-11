@@ -3,20 +3,21 @@ import { createStackNavigator } from 'react-navigation';
 
 import Home from './Home';
 import Info from './Info';
+import FlexPractice from './FlexPractice';
 
 
   const Nav = createStackNavigator({
     home: {
-        screen: Home
+        screen: Home,
     },
     info: {
-        screen: Info
+        screen: Info,
     },
     flex: {
         screen: FlexPractice,
-        initialScreen: true,
-        
-    }
-  })
-  
+    },
+  }, {
+      initialRouteName: 'home',
+  });
+
   export default Nav;
